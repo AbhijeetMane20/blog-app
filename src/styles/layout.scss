@@ -1,0 +1,8 @@
+.layout {
+  height: 100vh;
+  background-color: #f7f5dd;
+  .main-container {
+    padding: 1rem;
+    height: calc(100% - 16rem);
+  }
+}

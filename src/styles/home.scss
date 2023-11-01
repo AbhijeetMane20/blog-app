@@ -1,0 +1,25 @@
+.home {
+  height: 100%;
+  .header-container {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input {
+      background-color: white;
+    }
+  }
+  .card-wrapper {
+    height: calc(100% - 3rem);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

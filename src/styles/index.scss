@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "./variables.scss";
+@import "./home.scss";
+@import "./aboutus.scss";
+@import "./header.scss";
+@import "./layout.scss";
+@import "./footer.scss";
+* {
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+}
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+.gap-1 {
+  gap: 1rem;
+}

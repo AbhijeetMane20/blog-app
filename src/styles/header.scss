@@ -1,0 +1,55 @@
+.header {
+  height: 4rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+
+  .logo {
+    width: 3rem;
+    height: 3rem;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  a {
+    font-family: $poppins-regular;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    color: black;
+    &:hover {
+      color: orange;
+    }
+  }
+}
+.menu {
+  display: none;
+}
+.menu-items {
+  flex-direction: column;
+  gap: 10px;
+  width: 10rem;
+  position: fixed;
+  top: 3rem;
+  background-color: white;
+  border-radius: 4px;
+  right: 0;
+  z-index: 100000;
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .links-container {
+    display: none;
+  }
+  .login-signup-container {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .menu-items {
+    display: flex;
+  }
+}
