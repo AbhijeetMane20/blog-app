@@ -36,7 +36,7 @@ export default function Home() {
             label="Search"
             variant="outlined"
             value={searchInput}
-            onChange={(e) => setSearchInput(e.target.value)}
+            onChange={(e) => setSearchInput(e.target.value.toLowerCase())}
             style={{ outline: "none" }}
           />
           <Button variant="contained" onClick={() => setBlogData(null)}>
