@@ -48,14 +48,16 @@ export default function Home() {
         <div className="card-wrapper">
           {blogData &&
             blogData.data.map((data) => (
-              <BlogCard
-                ownerInfo={data.owner}
-                publishDate={data.publishDate}
-                imageUrl={data.image}
-                likes={data.likes}
-                tags={data.tags}
-                text={data.text}
-              />
+              <div className="card">
+                <BlogCard
+                  ownerInfo={data.owner}
+                  publishDate={data.publishDate}
+                  imageUrl={data.image}
+                  likes={data.likes}
+                  tags={data.tags}
+                  text={data.text}
+                />
+              </div>
             ))}
         </div>
       ) : (

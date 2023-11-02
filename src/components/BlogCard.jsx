@@ -29,7 +29,7 @@ export default function BlogCard({
   return (
     <Card
       sx={{ maxWidth: 345 }}
-      style={{ marginBottom: "1rem", minWidth: "345px" }}
+      style={{ minWidth: "345px", minHeight: "445px" }}
     >
       <CardHeader
         avatar={
